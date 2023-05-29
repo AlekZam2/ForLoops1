@@ -19,11 +19,12 @@ public class HalfSumElement {
             }
 
         }
-        int sumWithoutMaxNumber = Math.abs (sum - maxNumber);
+        int sumWithoutMaxNumber = sum - maxNumber;
 
         if ( sumWithoutMaxNumber == maxNumber){
             System.out.println( "Yes " + sum);
         }else {
+            int diff = Math.abs (sumWithoutMaxNumber - maxNumber);
 
             System.out.println("No, the difference is " + diff);
         }
